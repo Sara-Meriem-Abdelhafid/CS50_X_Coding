@@ -9,20 +9,21 @@ int main(void)
 {
     printf("Height: ");
     int tall = get_positive_input();
-    print_pyramids(tall);
+    //print_pyramids(tall);
 }
 
 int get_positive_input(void)
 {
-    int n, result;
-    result = scanf("%d", &n);
-    if(n<1 || n>8){
+    char n; 
+
+    scanf(" %c", &n);
+    if(n<'1' || n>'8'){
     do{
         printf("\nentre a positive value between [1-8]: ");
-        result = scanf("%d", &n);
-    }while (n<1 || n>8 || result != 1);
+        scanf(" %c", &n);
+    }while (n<'1' || n>'8');
     }
-    return n;
+    return n-'0';
 }
 
 void print_raw(int level, int tall)
