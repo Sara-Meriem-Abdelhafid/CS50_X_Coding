@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 int get_positive_input(void);
 void print_pyramids(int tall);
@@ -8,22 +9,25 @@ void print_raw(int level, int tall);
 int main(void)
 {
     printf("Height: ");
-    int tall = get_positive_input();
-    //print_pyramids(tall);
+    char tall = get_positive_input();
+    print_pyramids(tall);
 }
 
 int get_positive_input(void)
 {
-    char n; 
+    char input[10]; 
+    fgets(input, sizeof(input), stdin);
+    input[strcspn(input, "\n")] = '\0';
 
-    scanf(" %c", &n);
-    if(n<'1' || n>'8'){
-    do{
-        printf("\nentre a positive value between [1-8]: ");
-        scanf(" %c", &n);
-    }while (n<'1' || n>'8');
+    if(input[0]<'1' || input[0]>'8')
+    {
+        do{
+            printf("Height: ");
+            fgets(input, sizeof(input), stdin);
+            input[strcspn(input, "\n")] = '\0';
+        }while (input[0]<'1' || input[0]>'8' );
     }
-    return n-'0';
+    return input[0]-'0';
 }
 
 void print_raw(int level, int tall)
