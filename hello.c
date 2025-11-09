@@ -1,3 +1,9 @@
+//code hello.c          // to create a file
+//clang hello.c
+//./a.out // run hello.c file
+//clang -o hello hello.c   // to compile the c code and name the output file "hello" instead of "a.out"
+//./hello                  // run hello file
+
 /*
 Commends to remembre
 code hello.c      # CS50 commend to create a file
