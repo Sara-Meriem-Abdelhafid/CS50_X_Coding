@@ -50,7 +50,7 @@ int get_positive_input(void);
 bool get_valid_bool(void);
 
 
-int main(void)
+int main(int argc, char *argv[])
 {    
     const int col_num =3;
     char name[20];

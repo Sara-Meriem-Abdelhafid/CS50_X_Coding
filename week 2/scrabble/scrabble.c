@@ -1,5 +1,4 @@
 #define _CRT_SECURE_NO_WARNINGS
-
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
@@ -9,7 +8,6 @@ const int alphabit_score[] = {1, 3, 3, 2, 1, 4, 2, 4, 1, 8, 5, 1, 3, 1, 1, 3, 10
 
 int get_word_score(char word[]);
 int get_letter_score(char letter);
-
 
 int main(void)
 {
@@ -32,8 +30,9 @@ int main(void)
     {
         printf("Player 1 wins!\n");
     }
-    else{
-       printf("Player 2 wins!\n");
+    else
+    {
+        printf("Player 2 wins!\n");
     }
 
     return 0;
