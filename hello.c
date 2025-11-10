@@ -1,8 +1,8 @@
 //code hello.c          // to create a file
 //clang hello.c
 //./a.out // run hello.c file
-//clang -o hello hello.c   // to compile the c code and name the output file "hello" instead of "a.out"
-//./hello                  // run hello file
+//clang hello.c -o hello.exe   // to compile the c code and name the output file "hello" instead of "a.out"
+//.\hello.exe                 // run hello file
 
 /*
 Commends to remembre
