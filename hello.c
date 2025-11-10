@@ -3,6 +3,7 @@
 //./a.out // run hello.c file
 //clang hello.c -o hello.exe   // to compile the c code and name the output file "hello" instead of "a.out"
 //.\hello.exe                 // run hello file
+// dir // instead of "ls" in windows
 
 /*
 Commends to remembre
@@ -41,6 +42,9 @@ submit50 cs50/problems/2025/x/me          # to submit the solution
 */
 #include <stdio.h>
 #include <stdbool.h>
+//#include <stdio.h>
+//#include <string.h>
+//#include <ctype.h>
 void meaw(int n);
 int get_positive_input(void);
 bool get_valid_bool(void);
